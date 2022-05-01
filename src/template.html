@@ -6,5 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%=htmlWebpackPlugin.options.title %></title>
   </head>
-  <body class="container"></body>
+  <body class="container">
+    <nav class="navigation">
+      <h2>WEATHER APP</h2>
+    </nav>
+
+    <section>
+      <form class="search-form">
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Entry Desired Country"
+          class="location"
+        />
+        <button type="submit" class="search-button">
+          <img src="" alt="search-icon" class="search-icon" />
+        </button>
+      </form>
+      <div class="error hide">country not found!</div>
+    </section>
+
+    <article>
+      <!-- generated loader and card JavaScript -->
+    </article>
+
+    <footer>
+      <p>
+        <span>Copyright &copy; 2022 Christianah</span>
+        <a href="https://github.com/Chris1-web/weather_app" target="_blank">
+          <img alt="github icon" class="contact-github-icon" />
+        </a>
+      </p>
+    </footer>
+  </body>
 </html>

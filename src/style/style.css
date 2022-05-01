@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --dark-blue: #0000e0;
+  --light-blue: #b3b3ff;
+  --white: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
+}
+
+.navigation {
+  height: 10vh;
+  border-bottom: 0.2rem solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation > h2 {
+  font-size: 4rem;
+}
+
+.search-form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form > input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  width: 40%;
+  height: 100%;
+  border: none;
+  border-bottom: 0.2rem solid black;
+  font-size: 2rem;
+}
+
+.search-form > input:focus {
+  border-bottom: 0.2rem solid var(--dark-blue);
+}
+
+.search-form button {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  height: 100%;
+  background-color: var(--white);
+  color: var(--white);
+  border: 0.1rem solid var(--dark-blue);
+  border-radius: 100%;
+}
+
+::placeholder {
+  font-size: 2rem;
+}
+
+.search-form img {
+  height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  border-top: 0.2rem solid black;
+}
+
+footer p {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer img {
+  height: 3rem;
+}
+
+article {
+  padding: 2rem;
+}
+
+.card {
+  height: 27rem;
+  border: 0.2rem solid black;
+  border-radius: 3rem;
+  max-width: 58rem;
+  margin: 0 auto;
+  box-shadow: 0.5rem 0.5rem 2rem;
+}
+
+.back-to-form-button button {
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.card img {
+  height: 18rem;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top button {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  height: 100%;
+  background-color: var(--white);
+  border: 0.1rem solid var(--dark-blue);
+  border-radius: 100%;
+}
+
+.left-side {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+  border-right: 0.2rem solid black;
+}
+
+.right-side {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  color: var(--dark-blue);
+}
+
+.temperature {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+.bottom {
+  text-align: center;
+}
+
+.loader {
+  border: 1.2rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1rem solid black;
+  width: 10rem;
+  height: 10rem;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
