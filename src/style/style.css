@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -14,18 +15,25 @@ html {
   --dark-blue: #0000e0;
   --light-blue: #b3b3ff;
   --white: #fff;
+  --main-color: #69db7c;
+  --main-color-light: #a6e9b2;
+  --gray-color: #112a46;
+  --gray-color-light: #6c747f;
 }
 
 ul {
   list-style: none;
+  text-align: left;
 }
 
 body {
   height: 100vh;
-  font-family: "Indie Flower", cursive;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--grey-color-light);
 }
 
 .container {
@@ -35,7 +43,6 @@ body {
 
 .navigation {
   height: 10vh;
-  border-bottom: 0.2rem solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +50,7 @@ body {
 
 .navigation > h2 {
   font-size: 4rem;
+  font-weight: 600;
 }
 
 .search-form {
@@ -50,34 +58,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .search-form > input {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   outline: none;
-  width: 40%;
+  width: 45%;
   height: 100%;
-  border: none;
-  border-bottom: 0.2rem solid black;
-  font-size: 2rem;
-}
-
-.search-form > input:focus {
-  border-bottom: 0.2rem solid var(--dark-blue);
+  border: 0.2rem solid black;
+  font-size: 1.7rem;
+  text-align: left;
+  border-radius: 3rem;
 }
 
 .search-form button {
   padding: 0.5rem 0.7rem;
   cursor: pointer;
-  height: 100%;
-  background-color: var(--white);
-  color: var(--white);
-  border: 0.1rem solid var(--dark-blue);
-  border-radius: 100%;
+  height: 80%;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--grey-color);
+  border-radius: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 66.5%;
 }
 
 ::placeholder {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .search-form img {
@@ -91,6 +100,7 @@ footer {
   height: 10vh;
   width: 100%;
   border-top: 0.2rem solid black;
+  color: var(--grey-color-light);
 }
 
 footer p {
@@ -109,12 +119,13 @@ article {
 }
 
 .card {
-  height: 27rem;
-  border: 0.2rem solid black;
+  height: 30rem;
   border-radius: 3rem;
-  max-width: 58rem;
+  max-width: 70rem;
   margin: 0 auto;
-  box-shadow: 0.5rem 0.5rem 2rem;
+  box-shadow: 0.6rem 0.6rem 1rem #d3d5d9;
+  background-color: var(--main-color);
+  color: var(--grey-color-light);
 }
 
 .back-to-form-button button {
@@ -154,6 +165,10 @@ article {
   border-right: 0.2rem solid black;
 }
 
+.city {
+  font-weight: bold;
+}
+
 .right-side {
   width: 60%;
   display: flex;
@@ -177,6 +192,11 @@ article {
 
 .bottom {
   text-align: center;
+}
+
+.bottom h2 {
+  font-size: 1rem;
+  color: var(--grey-color-light);
 }
 
 .loader {
